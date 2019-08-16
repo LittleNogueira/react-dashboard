@@ -5,6 +5,8 @@ import './TopNavbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/fontawesome-free-solid'
 
+import logo from '../../assets/logo.svg';
+
 class TopNavbar extends Component{
     render(){
         return(
@@ -12,9 +14,14 @@ class TopNavbar extends Component{
                 <div className="bars" >
                     <FontAwesomeIcon icon={faBars} />
                 </div>
-                <ul className="options-topnavbar" >
-
-                </ul>
+                <div className="actions" >
+                    <div className="details" >
+                        Cloud Four - Productions 
+                    </div>
+                    <div className="profile" >
+                        <img src={logo} alt="profile" />
+                    </div>
+                </div>
                 {/* <div className="content-topnavbar" >
                     <p>Cloud four - Productions</p>
                 </div>
