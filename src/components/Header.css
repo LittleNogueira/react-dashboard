@@ -23,9 +23,3 @@
     font-weight: 600;
     color: #141c34;
 }
-
-@media (max-width: 600px) {
-    .container-content {
-        width: 100vw;
-    }
-}

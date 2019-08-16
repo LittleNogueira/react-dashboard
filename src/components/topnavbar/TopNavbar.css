@@ -3,7 +3,6 @@
     height: 60px;
     background-color: white;
     display: flex;
-    justify-content: flex-end;
     color: #afb4c5;
 }
 
@@ -12,4 +11,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.bars{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    color: #141c34;
+    font-size: 20px;
+    /* display: none; */
+    cursor: pointer;
+}
+
+.options-topnavbar{
+    
 }
