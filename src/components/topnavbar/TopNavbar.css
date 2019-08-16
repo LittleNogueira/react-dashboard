@@ -1,0 +1,15 @@
+.container-topnavbar{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    color: #afb4c5;
+}
+
+.content-topnavbar{
+    border-left: 1px solid #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

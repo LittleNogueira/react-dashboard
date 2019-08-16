@@ -1,0 +1,22 @@
+.container-login {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, rgba(63, 49, 100, 0.85), rgba(63, 49, 100, 0.85)), url("../../assets/img/background-cloud.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  margin-bottom: 25px;
+}
+
+.btn-login{
+  width: 100%;
+}

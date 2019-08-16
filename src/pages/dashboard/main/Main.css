@@ -1,0 +1,41 @@
+.gradient-blue{
+    background-image: linear-gradient(to top left, #726dff, #a57dff);
+    box-shadow: 0px 24px 34px -17px rgba(133,115,255,1);
+}
+
+.gradient-orange{
+    background-image: linear-gradient(to top left, #f8c397, #fe8e88);
+    box-shadow: 0px 24px 34px -17px rgba(249,185,148,1);
+}
+
+.gradient-la-sei{
+    background-image: linear-gradient(to top left, #9c77d9, #f0aec0);
+    box-shadow: 0px 24px 34px -17px rgba(169,128,213,1);
+}
+
+.gradient-green{
+    background-image: linear-gradient(to top left, #4dbff5, #5fdbd7);
+    box-shadow: 0px 24px 34px -17px rgba(79,194,242,1);
+}
+
+.card-custom{
+    border: none;
+    color: #f1f4f9;
+    margin-bottom: 30px;
+}
+
+.card-custom hr{
+    border-top: 1px solid #f1f4f9;
+}
+
+.card-custom .title{
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.card-custom .subtitle{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 0px;
+}

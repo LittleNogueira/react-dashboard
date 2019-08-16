@@ -1,0 +1,59 @@
+.side-navbar{
+    height: 100vh;
+    background-color: #3F3164;
+    background-image: linear-gradient(to bottom, rgba(63, 49, 100, 0.85), rgba(63, 49, 100, 0.85)), url("../../assets/img/background-cloud.jpg");
+    width: 300px;
+}
+
+.content-navbar{
+    color: #ffffff;
+}
+
+.content-navbar h1{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 35px;
+}
+
+.content-navbar ul{
+    padding: 0px;
+    margin: 0px;
+    list-style:none;
+    margin-bottom: 30px;
+}
+
+.content-navbar ul li{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #e3e2fe;
+    padding-left: 35px;
+}
+
+.content-navbar ul li:hover{
+    background-color: #8e7cbc;
+    color: white;
+    border-left: 4px solid white;
+    padding-left: 31px;
+}
+
+.logo-navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-navbar img{
+    height: 160px;
+    width: 160px;
+}
+
+.icon-navbar{
+    margin-right: 15px;
+}
+
+@media (max-width: 600px) {
+  .side-navbar {
+    display: none;
+   }
+}
