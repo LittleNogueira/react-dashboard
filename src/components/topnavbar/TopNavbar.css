@@ -14,15 +14,51 @@
 }
 
 .bars{
-    display: flex;
     align-items: center;
     margin-left: 30px;
     color: #141c34;
     font-size: 20px;
-    /* display: none; */
+    display: none;
     cursor: pointer;
 }
 
-.options-topnavbar{
-    
+.actions .details{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-left: 0.5px solid #141c34; */
+    border-left: 1px solid #dfe1e5;
+
+}
+
+.actions .profile img{
+    width: 40px;
+    height: 40px;
+}
+
+.actions .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #dfe1e5;
+}
+
+.actions{
+    color: #141c34;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.actions div{
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .bars{
+        display: flex;
+    }
 }

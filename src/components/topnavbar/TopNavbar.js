@@ -1,33 +1,29 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 
 import './TopNavbar.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Image from 'react-bootstrap/Image'
+
 import { faBars } from '@fortawesome/fontawesome-free-solid'
 
-import logo from '../../assets/logo.svg';
+import profile from '../../assets/img/profile.png';
 
-class TopNavbar extends Component{
-    render(){
-        return(
+class TopNavbar extends Component {
+    render() {
+        return (
             <div className="container-topnavbar" >
                 <div className="bars" >
                     <FontAwesomeIcon icon={faBars} />
                 </div>
-                <div className="actions" >
-                    <div className="details" >
-                        Cloud Four - Productions 
-                    </div>
+                <div className="actions float-right" >
                     <div className="profile" >
-                        <img src={logo} alt="profile" />
+                        <Image src={profile} roundedCircle />
+                    </div>
+                    <div className="details" >
+                        Cloud four - Productions
                     </div>
                 </div>
-                {/* <div className="content-topnavbar" >
-                    <p>Cloud four - Productions</p>
-                </div>
-                <div className="content-topnavbar" >
-                    <p>Photo</p>
-                </div> */}
             </div>
         );
     }

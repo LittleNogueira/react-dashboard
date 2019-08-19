@@ -8,18 +8,27 @@
     flex-direction: column;
     width: calc(100vw - 300px);
     /* Remover */
-    height: calc(100vh); 
+    height: 100vh; 
     background-color: #f0f3f8;
 }
 
 .main-content{
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 30px;
-}
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+    height: 95vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}   
 
 .main-content h1{
     font-size: 30px;
     font-weight: 600;
     color: #141c34;
+}
+
+@media (max-width: 600px) {
+    .container-content{
+        width: 100vw;
+    }
 }

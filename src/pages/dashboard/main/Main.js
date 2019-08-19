@@ -14,7 +14,7 @@ class Main extends Component {
                 <Header>
                     <h1>Hello World!</h1>
                     <Row>
-                        <Col xs="12" sm="12" md="12" lg="4" xl="3" >
+                        <Col xs="12" sm="12" md="12" lg="6" xl="3" >
                             <Card className="card-custom gradient-blue" >
                                 <Card.Body>
                                     <FontAwesomeIcon icon={faBox} /> Hello Word!
@@ -24,7 +24,7 @@ class Main extends Component {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col xs="12" sm="12" md="12" lg="4" xl="3" >
+                        <Col xs="12" sm="12" md="12" lg="6" xl="3" >
                             <Card className="card-custom gradient-orange" >
                                 <Card.Body>
                                     <FontAwesomeIcon icon={faBox} /> Hello Word!
@@ -34,7 +34,7 @@ class Main extends Component {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col xs="12" sm="12" md="12" lg="4" xl="3" >
+                        <Col xs="12" sm="12" md="12" lg="6" xl="3" >
                             <Card className="card-custom gradient-la-sei" >
                                 <Card.Body>
                                     <FontAwesomeIcon icon={faBox} /> Hello Word!
@@ -44,7 +44,7 @@ class Main extends Component {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col xs="12" sm="12" md="12" lg="4" xl="3" >
+                        <Col xs="12" sm="12" md="12" lg="6" xl="3" >
                             <Card className="card-custom gradient-green" >
                                 <Card.Body>
                                     <FontAwesomeIcon icon={faBox} /> Hello Word!

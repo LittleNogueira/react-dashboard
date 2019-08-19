@@ -17,7 +17,7 @@ class SideNavbar extends Component{
                 </div>
                 <div className="content-navbar" >
                     <h1>Using Onesigal</h1>
-                    <ul>
+                    <ul className="overflow-navbar" >
                         <li><FontAwesomeIcon className="icon-navbar" icon={faCheckSquare} /> Dashboard</li>
                         <li><FontAwesomeIcon className="icon-navbar" icon={faSlidersH} /> Settings</li>
                         <li><FontAwesomeIcon className="icon-navbar" icon={faUserCircle} /> Users</li>
