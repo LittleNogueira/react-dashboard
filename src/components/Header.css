@@ -6,6 +6,7 @@
 .container-content{
     display: flex;
     flex-direction: column;
+    margin-left: 300px;
     width: calc(100vw - 300px);
     /* Remover */
     height: 100vh; 
@@ -30,5 +31,6 @@
 @media (max-width: 600px) {
     .container-content{
         width: 100vw;
+        margin-left: 0px;
     }
 }

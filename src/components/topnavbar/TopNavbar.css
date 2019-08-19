@@ -3,7 +3,7 @@
     height: 60px;
     background-color: white;
     display: flex;
-    color: #afb4c5;
+    color: #141c34;
 }
 
 .content-topnavbar{
@@ -22,39 +22,12 @@
     cursor: pointer;
 }
 
-.actions .details{
+.container-topnavbar .title{
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-left: 0.5px solid #141c34; */
-    border-left: 1px solid #dfe1e5;
-
-}
-
-.actions .profile img{
-    width: 40px;
-    height: 40px;
-}
-
-.actions .profile{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-left: 1px solid #dfe1e5;
-}
-
-.actions{
-    color: #141c34;
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-}
-
-.actions div{
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 100%;
+    margin-left: 30px;
 }
 
 @media (max-width: 600px) {
