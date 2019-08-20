@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './Main.css';
 
 import Header from '../../../components/Header';
 import CardGradient from '../../../components/card-gradient/CardGradient';
@@ -43,7 +42,7 @@ class Main extends Component {
                             <CardGradient 
                                 title="March 27th 2019" 
                                 subtitle="12:26:05 am UTC - 07:00"
-                                color="green">
+                                color="red">
                                 <FontAwesomeIcon icon={faBox} /> Hello Word!
                             </CardGradient>
                         </Col>
