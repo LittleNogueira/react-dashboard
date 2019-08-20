@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-
 import './TopNavbar.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Image from 'react-bootstrap/Image'
-
-import { faBars } from '@fortawesome/fontawesome-free-solid'
+import { faBars, faSignOutAlt } from '@fortawesome/fontawesome-free-solid'
 
 import profile from '../../assets/img/profile.png';
+
+import Image from 'react-bootstrap/Image'
 
 class TopNavbar extends Component {
     render() {
@@ -22,7 +21,9 @@ class TopNavbar extends Component {
                 <div className="actions" >
                     <div className="profile" >
                         <Image roundedCircle src={profile} />
-                        <FontAwesomeIcon icon={faBars} />
+                    </div>
+                    <div className="sing-out" >
+                        <FontAwesomeIcon icon={faSignOutAlt} />
                     </div>
                 </div>
             </div>

@@ -35,13 +35,30 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 30px;
+}
+
+.actions div{
+    padding-right: 12px;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.actions div:hover{
+    background-color:#e3e3e3;
 }
 
 .actions .profile{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.actions .sing-out{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #999999;
+    width: 59px;
 }
 
 .actions .profile img{
