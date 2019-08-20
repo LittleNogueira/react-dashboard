@@ -24,10 +24,29 @@
 
 .container-topnavbar .title{
     text-transform: uppercase;
+    display: flex;  
+    align-items: center;
+    margin-left: 30px;
+    width: 500px;
+}
+
+.actions{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.actions .profile{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+}
+
+.actions .profile img{
+    height: 35px;
+    width: 35px;
 }
 
 @media (max-width: 600px) {

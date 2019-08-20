@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import './TopNavbar.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import Image from 'react-bootstrap/Image'
+import Image from 'react-bootstrap/Image'
 
 import { faBars } from '@fortawesome/fontawesome-free-solid'
 
-// import profile from '../../assets/img/profile.png';
+import profile from '../../assets/img/profile.png';
 
 class TopNavbar extends Component {
     render() {
@@ -21,7 +21,8 @@ class TopNavbar extends Component {
                 </div>
                 <div className="actions" >
                     <div className="profile" >
-
+                        <Image roundedCircle src={profile} />
+                        <FontAwesomeIcon icon={faBars} />
                     </div>
                 </div>
             </div>
