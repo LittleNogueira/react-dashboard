@@ -32,9 +32,8 @@ class Header extends Component {
                            {this.props.children}
                        </div>
                     </div>
-
                 </div>
-                
+                <div onClick={this.showAndHiddenSidebar.bind(this)} className={`hidden ${showSidebar ? 'show' : ''}`} ></div>
             </div>
         );
     }

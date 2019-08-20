@@ -33,4 +33,15 @@
         width: 100vw;
         margin-left: 0px;
     }
+
+    .hidden.show{
+        display: block;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0,0,0,0.4);
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
 }
