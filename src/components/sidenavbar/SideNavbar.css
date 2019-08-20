@@ -7,6 +7,7 @@
     top: 0;
     left: 0;
     z-index: 1;
+    transition: 0.5s;
 }
 
 .content-navbar{
@@ -63,7 +64,27 @@
 }
 
 @media (max-width: 600px) {
-  .side-navbar {
-    display: none;
+  .side-navbar.show{
+        width: 270px;
    }
+
+   .side-navbar.show .logo-navbar{
+        display: flex;
+    }
+
+    .side-navbar.show .content-navbar{
+        display: block;
+    }
+
+   .side-navbar{
+        width: 0px; 
+   }
+
+   .side-navbar .logo-navbar{
+        display: none; 
+    }
+
+    .side-navbar .content-navbar{
+        display: none; 
+    }
 }

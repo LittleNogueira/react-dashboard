@@ -9,11 +9,15 @@ import profile from '../../assets/img/profile.png';
 import Image from 'react-bootstrap/Image'
 
 class TopNavbar extends Component {
+
     render() {
+
+        const {actionBar} = this.props; 
+
         return (
             <div className="container-topnavbar" >
                 <div className="bars" >
-                    <FontAwesomeIcon icon={faBars} />
+                    <FontAwesomeIcon onClick={actionBar} icon={faBars} />
                 </div>
                 <div className="title" >
                     Cloud four - Productions

@@ -10,8 +10,11 @@ import { faCheckSquare,faSlidersH,faUserCircle,faBox,faSignal } from '@fortaweso
 class SideNavbar extends Component{
 
     render(){
+
+        const {show} = this.props;
+
         return (
-            <div className="side-navbar" >
+            <div className={`side-navbar ${show ? 'show' : ''}`} >
                 <div className="logo-navbar" >
                     <img src={logo} alt="Logo" />
                 </div>

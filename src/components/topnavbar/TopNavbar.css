@@ -70,4 +70,8 @@
     .bars{
         display: flex;
     }
+
+    .container-topnavbar .title{
+        display: none;
+    }
 }
