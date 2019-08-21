@@ -7,16 +7,17 @@ import { ToastContainer } from 'react-toastify';
 // import AuthService from '../../utils/services/AuthService';
 import FormValidator from '../../utils/FormValidator';
 import { Redirect } from 'react-router-dom'
+import Form from 'react-bootstrap/Form';
 
 
 class Login extends Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.state = {
-      login:{
-        email:'mateus_nogol@outlook.com',
+      login: {
+        email: 'mateus_nogol@outlook.com',
         password: '12345'
       },
       loading: false,
@@ -42,19 +43,20 @@ class Login extends Component {
   changeValue = event => {
     const field = event.target.name;
     this.setState({
-      login:{
+      login: {
         ...this.state.login,
         [field]: event.target.value
       }
     });
   }
 
-  login = () => {
+  login = (e) => {
+    e.preventDefault();
     const valid = this.formValidator.isValid(this.state.login);
-    this.setState({loading:true});
+    this.setState({ loading: true });
 
-    if(valid.isValid){
-      this.setState({redirect:true});
+    if (valid.isValid) {
+      this.setState({ redirect: true });
       // AuthService.login(this.state.login).then(res => {
       //   ToastNotification.notify('success',":)");
       // }).catch(e => {
@@ -62,41 +64,42 @@ class Login extends Component {
       // }).finally(res => {
       //   this.setState({loading:false});
       // })
-    }else{
-      const {email, password} = valid;
+    } else {
+      const { email, password } = valid;
       const errors = [email, password];
 
       errors.forEach(error => {
-        if(!error.isValid)
-          ToastNotification.notify('error',error.message);
+        if (!error.isValid)
+          ToastNotification.notify('error', error.message);
       });
-      this.setState({loading:false});
+      this.setState({ loading: false });
     }
   }
 
   render() {
 
-    const {loading, redirect, login} = this.state;
+    const { loading, redirect, login } = this.state;
 
     if (redirect) {
-      return <Redirect to='/dashboard'/>;
+      return <Redirect to='/dashboard' />;
     }
 
     return (
       <div className="container-login">
         <div className="form" >
           <img className="logo" src={logo} alt="logo" />
-          <form>
-            <div className="form-group">
-              <input type="text" id="email" value={login.email} onChange={this.changeValue} className="form-library" name="email" placeholder="E-mail" autoComplete="off"/>
-            </div>
-            <div className="form-group">
-              <input id="password" value={login.password} onChange={this.changeValue} className="form-library" name="password" type="password" placeholder="Senha"/>
-            </div>
-            <Button loading={loading} onClick={() => this.login()} className="btn-library btn-login" type="button" >Acessar</Button>
-          </form>
+          <Form onSubmit={this.login}>
+            <Form.Group>
+              <Form.Control value={login.email} onChange={this.changeValue} name="email" className="form-login" type="email" placeholder="E-mail" autoComplete="off" />
+            </Form.Group>
+
+            <Form.Group>
+              <Form.Control value={login.password} onChange={this.changeValue} name="password" className="form-login" type="password" placeholder="Password" />
+            </Form.Group>
+            <Button loading={loading} className="btn-library btn-login" type="submit" >Acessar</Button>
+          </Form>
         </div>
-        <ToastContainer/>
+        <ToastContainer />
       </div>
     );
   }
