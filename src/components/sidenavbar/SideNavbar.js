@@ -33,6 +33,16 @@ class SideNavbar extends Component{
                         <li><FontAwesomeIcon className="icon-navbar" icon={faSignal} /> Onesigal API</li>
                         <li><FontAwesomeIcon className="icon-navbar" icon={faBox} /> Delivery</li>
                         <li><FontAwesomeIcon className="icon-navbar" icon={faSignal} /> Onesigal API</li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faCheckSquare} /> Dashboard</li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faSlidersH} /> Settings</li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faUserCircle} /> Users</li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faBox} /> Delivery</li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faSignal} /> Onesigal API</li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faCheckSquare} /> Dashboard</li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faSlidersH} /> Settings</li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faUserCircle} /> Users</li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faBox} /> Delivery</li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faSignal} /> Onesigal API</li>
                     </ul>
                 </div>
             </div>
