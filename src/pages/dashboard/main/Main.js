@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Main.css';
 
 import Header from '../../../components/Header';
 import CardGradient from '../../../components/card-gradient/CardGradient';
@@ -179,7 +180,7 @@ class Main extends Component {
                     <h1>Upload your data</h1>
                     <Row>
                         <Col xs="12" sm="12" md="12" lg="12" xl="6" >
-                            <Card>
+                            <Card className="card-chart" >
                                 <Card.Body>
                                 <Card.Title>Bar Chart</Card.Title>
                                 <ReactEcharts 
@@ -190,8 +191,8 @@ class Main extends Component {
                             </Card>
                         </Col>
                         <Col xs="12" sm="12" md="12" lg="12" xl="6" >
-                            <Card >
-                                <Card.Body>
+                            <Card className="card-chart" >
+                                <Card.Body  >
                                 <Card.Title>Pie Chart</Card.Title>
                                 <ReactEcharts 
                                     option={this.getOptionPieChart()} 
