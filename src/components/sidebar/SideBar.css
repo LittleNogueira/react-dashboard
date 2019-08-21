@@ -16,6 +16,10 @@
     height: calc(100vh - 160px);
 }
 
+.content-navbar a{
+    text-decoration: none;
+}
+
 /* width */
 .content-navbar::-webkit-scrollbar {
     width: 4px;

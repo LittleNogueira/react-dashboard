@@ -22,10 +22,17 @@ class SideBar extends Component{
                     <h1>Using Onesigal</h1>
                     <ul className="overflow-navbar" >
                         <Link to="/dashboard" ><li><FontAwesomeIcon className="icon-navbar" icon={faCheckSquare} /> Dashboard</li></Link>
-                        <Link to="/form" ><li><FontAwesomeIcon className="icon-navbar" icon={faSlidersH} /> Form</li></Link>
-                        <li><FontAwesomeIcon className="icon-navbar" icon={faUserCircle} /> Users</li>
-                        <li><FontAwesomeIcon className="icon-navbar" icon={faBox} /> Delivery</li>
-                        <li><FontAwesomeIcon className="icon-navbar" icon={faSignal} /> Onesigal API</li>
+                        <Link to="/form" ><li><FontAwesomeIcon className="icon-navbar" icon={faSlidersH} /> Forms</li></Link>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faUserCircle} /> Item sidebar </li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faBox} /> Item sidebar </li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faSignal} />  Item sidebar </li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faUserCircle} /> Item sidebar </li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faBox} /> Item sidebar </li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faSignal} />  Item sidebar </li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faUserCircle} /> Item sidebar </li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faBox} /> Item sidebar </li>
+                        <li><FontAwesomeIcon className="icon-navbar" icon={faSignal} />  Item sidebar </li>
+                        
                     </ul>
                 </div>
             </div>
