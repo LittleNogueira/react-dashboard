@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../../../components/Header';
+import Layout from '../../../layouts/dashboard/Layout';
 import { Card, Col } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'
@@ -8,7 +8,7 @@ class Forms extends Component {
 
     render() {
         return (
-            <Header>
+            <Layout>
                 <h1>Forms</h1>
                 <Card>
                     <Card.Body>
@@ -93,7 +93,7 @@ class Forms extends Component {
                         </Form>
                     </Card.Body>
                 </Card>
-            </Header>
+            </Layout>
         )
     }
 

@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import './Header.css';
+import React, {Component} from 'react';
+import SideBar from '../../components/sidebar/SideBar';
+import TopNavbar from '../../components/topnavbar/TopNavbar';
+import './Layout.css';
 
-import SideBar from './sidebar/SideBar';
-import TopNavbar from '../components/topnavbar/TopNavbar';
-
-class Header extends Component {
+class Layout extends Component{
 
     constructor(props){
         super(props);
@@ -37,6 +36,7 @@ class Header extends Component {
             </div>
         );
     }
+
 }
 
-export default Header;
+export default Layout;

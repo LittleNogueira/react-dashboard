@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-
-import Header from '../../../components/Header';
+import Layout from '../../../layouts/dashboard/Layout';
 import CardGradient from '../../../components/card-gradient/CardGradient';
 import { Card, Row, Col, Table } from 'react-bootstrap';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBox } from '@fortawesome/fontawesome-free-solid'
 import ReactEcharts from 'echarts-for-react';
@@ -59,7 +57,7 @@ class Main extends Component {
     render() {
         return (
             <div>
-                <Header>
+                <Layout>
                     <h1>Hello World!</h1>
                     <Row>
                         <Col xs="12" sm="12" md="12" lg="6" xl="3" >
@@ -167,7 +165,7 @@ class Main extends Component {
                     </Row>
 
 
-                </Header>
+                </Layout>
             </div>
         );
     }
