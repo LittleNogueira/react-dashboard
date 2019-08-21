@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Header.css';
 
-import SideNavbar from '../components/sidenavbar/SideNavbar';
+import SideBar from './sidebar/SideBar';
 import TopNavbar from '../components/topnavbar/TopNavbar';
 
 class Header extends Component {
@@ -25,7 +25,7 @@ class Header extends Component {
         return (
             <div>
                 <div className="container-header" >
-                    <SideNavbar show={showSidebar} />
+                    <SideBar show={showSidebar} />
                     <div className="container-content" >
                        <TopNavbar actionBar={this.showAndHiddenSidebar.bind(this)} />
                        <div className="main-content" >

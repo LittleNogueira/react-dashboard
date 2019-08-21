@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './SideNavbar.css';
+import './SideBar.css';
 
 import logo from '../../assets/logo.svg';
 
@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckSquare,faSlidersH,faUserCircle,faBox,faSignal } from '@fortawesome/fontawesome-free-solid'
 
 
-class SideNavbar extends Component{
+class SideBar extends Component{
 
     render(){
 
@@ -51,4 +51,4 @@ class SideNavbar extends Component{
 
 }
 
-export default SideNavbar;
+export default SideBar;
