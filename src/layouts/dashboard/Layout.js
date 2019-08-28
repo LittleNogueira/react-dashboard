@@ -1,42 +1,29 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import SideBar from '../../components/sidebar/SideBar';
 import TopNavbar from '../../components/topnavbar/TopNavbar';
 import './Layout.css';
 
-class Layout extends Component{
+export default function Layout(props){
 
-    constructor(props){
-        super(props);
+    const [showSidebar, setShowSidebar] = useState(false);
 
-        this.state = {
-            showSidebar: false
-        }
-    }
-
-    showAndHiddenSidebar(){
-        this.setState({showSidebar: !this.state.showSidebar});
-    }
-
-    render() {
-
-        const {showSidebar} = this.state;
-
-        return (
-            <div>
-                <div className="container-header" >
-                    <SideBar show={showSidebar} />
-                    <div className="container-content" >
-                       <TopNavbar actionBar={this.showAndHiddenSidebar.bind(this)} />
-                       <div className="main-content" >
-                           {this.props.children}
-                       </div>
+    const showAndHiddenSidebar = () => {
+        setShowSidebar(!showSidebar);
+    };
+    
+    return (
+        <div>
+            <div className="container-header" >
+                <SideBar show={showSidebar} />
+                <div className="container-content" >
+                    <TopNavbar actionBar={showAndHiddenSidebar.bind(this)} />
+                    <div className="main-content" >
+                        {props.children}
                     </div>
                 </div>
-                <div onClick={this.showAndHiddenSidebar.bind(this)} className={`hidden ${showSidebar ? 'show' : ''}`} ></div>
             </div>
-        );
-    }
+            <div onClick={showAndHiddenSidebar.bind(this)} className={`hidden ${showSidebar ? 'show' : ''}`} ></div>
+        </div>
+    );
 
 }
-
-export default Layout;

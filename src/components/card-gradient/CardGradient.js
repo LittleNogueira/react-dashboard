@@ -1,26 +1,18 @@
-import './CardGradient.css';
-
 import React from 'react';
+import './CardGradient.css';
 import { Card } from 'react-bootstrap';
 
-class CardGradient extends React.Component{
-    
-    render(){
+export default function CardGradient(props){ 
 
-        const {title, subtitle, color} = this.props;
-
-        return(
-            <Card className={`card-custom gradient-${color ? color : 'default'}`} >
-                <Card.Body>
-                    {this.props.children}
-                    {this.props.children ? <hr/> : <span></span>}
-                    <p className="title" >{title}</p>
-                    <p className="subtitle" >{subtitle}</p>
-                </Card.Body>
-            </Card>
-        );
-    }
+    return(
+        <Card className={`card-custom gradient-${props.color ? props.color : 'default'}`} >
+            <Card.Body>
+                {props.children}
+                {props.children ? <hr/> : <span></span>}
+                <p className="title" >{props.title}</p>
+                <p className="subtitle" >{props.subtitle}</p>
+            </Card.Body>
+        </Card>
+    );
 
 }
-
-export default CardGradient;

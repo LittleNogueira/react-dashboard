@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './SideBar.css';
 import logo from '../../assets/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,38 +7,30 @@ import { Link } from "react-router-dom";
 
 
 
-class SideBar extends Component{
+export default function SideBar(props){
 
-    render(){
-
-        const {show} = this.props;
-
-        return (
-            <div className={`side-navbar ${show ? 'show' : ''}`} >
-                <div className="logo-navbar" >
-                    <img src={logo} alt="Logo" />
-                </div>
-                <div className="content-navbar" >
-                    <h1>Using Onesigal</h1>
-                    <ul className="overflow-navbar" >
-                        <Link to="/dashboard" ><li><FontAwesomeIcon className="icon-navbar" icon={faCheckSquare} /> Dashboard</li></Link>
-                        <Link to="/form" ><li><FontAwesomeIcon className="icon-navbar" icon={faSlidersH} /> Forms</li></Link>
-                        <li><FontAwesomeIcon className="icon-navbar" icon={faUserCircle} /> Item sidebar </li>
-                        <li><FontAwesomeIcon className="icon-navbar" icon={faBox} /> Item sidebar </li>
-                        <li><FontAwesomeIcon className="icon-navbar" icon={faSignal} />  Item sidebar </li>
-                        <li><FontAwesomeIcon className="icon-navbar" icon={faUserCircle} /> Item sidebar </li>
-                        <li><FontAwesomeIcon className="icon-navbar" icon={faBox} /> Item sidebar </li>
-                        <li><FontAwesomeIcon className="icon-navbar" icon={faSignal} />  Item sidebar </li>
-                        <li><FontAwesomeIcon className="icon-navbar" icon={faUserCircle} /> Item sidebar </li>
-                        <li><FontAwesomeIcon className="icon-navbar" icon={faBox} /> Item sidebar </li>
-                        <li><FontAwesomeIcon className="icon-navbar" icon={faSignal} />  Item sidebar </li>
-                        
-                    </ul>
-                </div>
+    return (
+        <div className={`side-navbar ${props.show ? 'show' : ''}`} >
+            <div className="logo-navbar" >
+                <img src={logo} alt="Logo" />
             </div>
-        );
-    }
-
+            <div className="content-navbar" >
+                <h1>Using Onesigal</h1>
+                <ul className="overflow-navbar" >
+                    <Link to="/dashboard" ><li><FontAwesomeIcon className="icon-navbar" icon={faCheckSquare} /> Dashboard</li></Link>
+                    <Link to="/form" ><li><FontAwesomeIcon className="icon-navbar" icon={faSlidersH} /> Forms</li></Link>
+                    <li><FontAwesomeIcon className="icon-navbar" icon={faUserCircle} /> Item sidebar </li>
+                    <li><FontAwesomeIcon className="icon-navbar" icon={faBox} /> Item sidebar </li>
+                    <li><FontAwesomeIcon className="icon-navbar" icon={faSignal} />  Item sidebar </li>
+                    <li><FontAwesomeIcon className="icon-navbar" icon={faUserCircle} /> Item sidebar </li>
+                    <li><FontAwesomeIcon className="icon-navbar" icon={faBox} /> Item sidebar </li>
+                    <li><FontAwesomeIcon className="icon-navbar" icon={faSignal} />  Item sidebar </li>
+                    <li><FontAwesomeIcon className="icon-navbar" icon={faUserCircle} /> Item sidebar </li>
+                    <li><FontAwesomeIcon className="icon-navbar" icon={faBox} /> Item sidebar </li>
+                    <li><FontAwesomeIcon className="icon-navbar" icon={faSignal} />  Item sidebar </li>
+                    
+                </ul>
+            </div>
+        </div>
+    );
 }
-
-export default SideBar;
