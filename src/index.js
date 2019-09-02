@@ -9,12 +9,22 @@ import Login from './pages/login/Login';
 import Main from './pages/dashboard/main/Main';
 import Forms from './pages/dashboard/form/Forms';
 
+import {createStore,combineReducers,applyMiddleware} from 'redux';
+import thunk from 'redux-thunk';
+import sidebar from './utils/stores/sidebar';
+import { Provider } from 'react-redux';
+
+const reducers = combineReducers({sidebar});
+const store = createStore(reducers,applyMiddleware(thunk));
+
 ReactDOM.render(
-        <Router>
-            <Route path="/" exact component={Login} />
-            <Route path="/dashboard" component={Main} />
-            <Route path="/form" component={Forms} />
-        </Router>, document.getElementById('root'));
+        <Provider store={store} >
+            <Router>
+                <Route path="/" exact component={Login} />
+                <Route path="/dashboard" component={Main} />
+                <Route path="/form" component={Forms} />
+            </Router>
+        </Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
