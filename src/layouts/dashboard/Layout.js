@@ -3,36 +3,32 @@ import SideBar from '../../components/sidebar/SideBar';
 import TopNavbar from '../../components/topnavbar/TopNavbar';
 import './Layout.css';
 import { ReactReduxContext } from 'react-redux';
-import {connect} from 'react-redux';
-import {showAndHidden} from '../../utils/actions/sidebar';
+import { connect } from 'react-redux';
+import { showAndHidden } from '../../utils/actions/sidebar';
 
-class Layout extends React.Component{
-
-    render(){
-        return(
-            <ReactReduxContext.Consumer>
+function Layout(props) {
+    return (
+        <ReactReduxContext.Consumer>
             {({ store }) => {
                 return (<div>
                     <div className="container-header" >
                         <SideBar store={store} />
                         <div className="container-content" >
-                            <TopNavbar actionBar={this.props.showAndHiddenSidebar} />
+                            <TopNavbar actionBar={props.showAndHiddenSidebar} />
                             <div className="main-content" >
-                                {this.props.children}
+                                {props.children}
                             </div>
                         </div>
                     </div>
-                    <div onClick={this.props.showAndHiddenSidebar} className={`hidden ${this.props.sidebar ? 'show' : ''}`} ></div>
-                </div>);    
+                    <div onClick={props.showAndHiddenSidebar} className={`hidden ${props.sidebar ? 'show' : ''}`} ></div>
+                </div>);
             }}
-            </ReactReduxContext.Consumer>
-        );
-    }
-
+        </ReactReduxContext.Consumer>
+    );
 }
 
 const mapStateToProps = (state) => {
-    return {sidebar:state.sidebar}
+    return { sidebar: state.sidebar }
 };
 
 const mapDispatchToProps = dispatch => {
@@ -41,6 +37,6 @@ const mapDispatchToProps = dispatch => {
             dispatch(showAndHidden());
         }
     }
-} 
+}
 
-export default connect(mapStateToProps,mapDispatchToProps)(Layout);
+export default connect(mapStateToProps, mapDispatchToProps)(Layout);
